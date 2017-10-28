@@ -8,4 +8,5 @@ set(ARGON_SRCS
   ${BISON_PARSER_OUTPUTS}
   ${FLEX_LEXER_OUTPUTS}
   ${CMAKE_CURRENT_LIST_DIR}/argon_parser.c
+  ${CMAKE_CURRENT_LIST_DIR}/argon_runner.c
 )
