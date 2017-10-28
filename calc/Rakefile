@@ -1,0 +1,9 @@
+require File.expand_path( "./calc_ruler", File.dirname( __FILE__ ) )
+ruler = CalcRuler.new
+
+desc "Build"
+task :build do
+  ruler.generate
+  sh( "cmake ." ) if ! File.exist?( "./Makefile" )
+  sh( "make" )
+end
